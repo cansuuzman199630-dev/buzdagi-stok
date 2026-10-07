@@ -1,0 +1,602 @@
+[
+  {
+    "product": "0,2 L",
+    "warehouse": "FABRİKA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,2 L",
+    "warehouse": "SAKARYA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,2 L",
+    "warehouse": "AVRUPA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,2 L",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,2 L",
+    "warehouse": "ANKARA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L",
+    "warehouse": "FABRİKA",
+    "onHand": 31860,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L",
+    "warehouse": "SAKARYA",
+    "onHand": 2263,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L",
+    "warehouse": "AVRUPA",
+    "onHand": 617,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L",
+    "warehouse": "ANKARA",
+    "onHand": 2301,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L EXCLUSIVE",
+    "warehouse": "FABRİKA",
+    "onHand": 6372,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L EXCLUSIVE",
+    "warehouse": "SAKARYA",
+    "onHand": 4257,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L EXCLUSIVE",
+    "warehouse": "AVRUPA",
+    "onHand": 1046,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L EXCLUSIVE",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L EXCLUSIVE",
+    "warehouse": "ANKARA",
+    "onHand": 1371,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,5 L",
+    "warehouse": "FABRİKA",
+    "onHand": 17199,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,5 L",
+    "warehouse": "SAKARYA",
+    "onHand": 37368,
+    "inTransit": 2376,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,5 L",
+    "warehouse": "AVRUPA",
+    "onHand": 4441,
+    "inTransit": 936,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,5 L",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 1008,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,5 L",
+    "warehouse": "ANKARA",
+    "onHand": 2844,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L",
+    "warehouse": "FABRİKA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L",
+    "warehouse": "SAKARYA",
+    "onHand": 802,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L",
+    "warehouse": "AVRUPA",
+    "onHand": 624,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L",
+    "warehouse": "ANKARA",
+    "onHand": 838,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L EXCLUSIVE",
+    "warehouse": "FABRİKA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L EXCLUSIVE",
+    "warehouse": "SAKARYA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L EXCLUSIVE",
+    "warehouse": "AVRUPA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L EXCLUSIVE",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1 L EXCLUSIVE",
+    "warehouse": "ANKARA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1,5 L",
+    "warehouse": "FABRİKA",
+    "onHand": 4704,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1,5 L",
+    "warehouse": "SAKARYA",
+    "onHand": 9344,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1,5 L",
+    "warehouse": "AVRUPA",
+    "onHand": 1655,
+    "inTransit": 263,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1,5 L",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "1,5 L",
+    "warehouse": "ANKARA",
+    "onHand": 1603,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "5 L",
+    "warehouse": "FABRİKA",
+    "onHand": 5240,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "5 L",
+    "warehouse": "SAKARYA",
+    "onHand": 4047,
+    "inTransit": 800,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "5 L",
+    "warehouse": "AVRUPA",
+    "onHand": 2828,
+    "inTransit": 680,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "5 L",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 480,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "5 L",
+    "warehouse": "ANKARA",
+    "onHand": 1821,
+    "inTransit": 320,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "180 CC",
+    "warehouse": "FABRİKA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "180 CC",
+    "warehouse": "SAKARYA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "180 CC",
+    "warehouse": "AVRUPA",
+    "onHand": 804,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "180 CC",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "180 CC",
+    "warehouse": "ANKARA",
+    "onHand": 174,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "250 CC",
+    "warehouse": "FABRİKA",
+    "onHand": 2100,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "250 CC",
+    "warehouse": "SAKARYA",
+    "onHand": 3484,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "250 CC",
+    "warehouse": "AVRUPA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "250 CC",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "250 CC",
+    "warehouse": "ANKARA",
+    "onHand": 449,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L CAM",
+    "warehouse": "FABRİKA",
+    "onHand": 600,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L CAM",
+    "warehouse": "SAKARYA",
+    "onHand": 50,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L CAM",
+    "warehouse": "AVRUPA",
+    "onHand": 25,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L CAM",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,33 L CAM",
+    "warehouse": "ANKARA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,75 L CAM",
+    "warehouse": "FABRİKA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,75 L CAM",
+    "warehouse": "SAKARYA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,75 L CAM",
+    "warehouse": "AVRUPA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,75 L CAM",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "0,75 L CAM",
+    "warehouse": "ANKARA",
+    "onHand": 47,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PET",
+    "warehouse": "FABRİKA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PET",
+    "warehouse": "SAKARYA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PET",
+    "warehouse": "AVRUPA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PET",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PET",
+    "warehouse": "ANKARA",
+    "onHand": 360,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PC",
+    "warehouse": "FABRİKA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PC",
+    "warehouse": "SAKARYA",
+    "onHand": 238,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PC",
+    "warehouse": "AVRUPA",
+    "onHand": 1254,
+    "inTransit": 1536,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PC",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 936,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "19 L PC",
+    "warehouse": "ANKARA",
+    "onHand": 82,
+    "inTransit": 864,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "15 L CAM",
+    "warehouse": "FABRİKA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "15 L CAM",
+    "warehouse": "SAKARYA",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "15 L CAM",
+    "warehouse": "AVRUPA",
+    "onHand": 272,
+    "inTransit": 108,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "15 L CAM",
+    "warehouse": "ANADOLU",
+    "onHand": 0,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  },
+  {
+    "product": "15 L CAM",
+    "warehouse": "ANKARA",
+    "onHand": 36,
+    "inTransit": 0,
+    "minStock": 0,
+    "updatedAt": "2026-10-07T08:55:38.050Z"
+  }
+]
