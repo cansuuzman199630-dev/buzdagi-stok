@@ -1,0 +1,5 @@
+BUZDAĞI STOK - GÜNCELLEME
+1. Dashboard depo sütununa tıklayın: sağdaki ürün grafiği seçilen depoyu gösterir. Tekrar tıklayarak veya 'Tüm Depolar' düğmesiyle genel toplama dönün.
+2. Stok Girişi: açılır listeden depo veya Tüm Depolar seçin, 'STOKLARI TEMİZLE' düğmesine tıklayıp onaylayın. Mevcut stok ve yoldaki miktarlar sıfırlanır, ürünler ve minimum stok eşikleri korunur.
+3. Render için ZIP içindeki buzdagi-stok-main klasörünün içeriğini GitHub deposunun ana dizinine yükleyin. Build Command: npm install, Start Command: npm start. Mevcut DATABASE_URL ortam değişkenini koruyun.
+4. ÖNEMLİ: Depo verilerini temizlemeden önce mevcut verilerinizin yedeğini alın. Bu işlem geri alınamaz.
