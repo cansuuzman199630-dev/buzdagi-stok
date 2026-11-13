@@ -48,6 +48,17 @@ async function initializeDatabase() {
     [JSON.stringify(defaultRows())]
   );
 
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS stock_notifications (
+      id BIGSERIAL PRIMARY KEY,
+      title TEXT NOT NULL,
+      message TEXT NOT NULL,
+      changed_products INTEGER NOT NULL DEFAULT 0,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+      read_at TIMESTAMPTZ
+    )
+  `);
+
   console.log('PostgreSQL stok veritabanı hazır.');
 }
 
@@ -164,6 +175,21 @@ const server = http.createServer(async (req, res) => {
       });
     }
 
+    if (p === '/api/notifications' && req.method === 'GET') {
+      const result = await pool.query(`
+        SELECT id::text, title, message, changed_products AS "changedProducts",
+               created_at AS "createdAt", read_at AS "readAt"
+        FROM stock_notifications ORDER BY id DESC LIMIT 50
+      `);
+      const unread = await pool.query('SELECT COUNT(*)::int AS count FROM stock_notifications WHERE read_at IS NULL');
+      return json(res, { notifications: result.rows, unread: unread.rows[0].count });
+    }
+
+    if (p === '/api/notifications/read' && req.method === 'POST') {
+      await pool.query('UPDATE stock_notifications SET read_at = NOW() WHERE read_at IS NULL');
+      return json(res, { ok: true });
+    }
+
     if (p === '/api/save' && req.method === 'POST') {
       const b = await body(req);
 
@@ -187,6 +213,8 @@ const server = http.createServer(async (req, res) => {
           old.map(x => [x.product + '|' + x.warehouse, x])
         );
 
+        const factoryChanges = new Set();
+
         for (const i of b.items) {
           const key = i.product + '|' + i.warehouse;
 
@@ -194,14 +222,17 @@ const server = http.createServer(async (req, res) => {
 
           const prev = map.get(key);
 
+          const nextOnHand = Math.max(0, Math.round(Number(i.onHand) || 0));
+          const nextInTransit = Math.max(0, Math.round(Number(i.inTransit) || 0));
+          if (i.warehouse === 'FABRİKA' &&
+              (Number(prev.onHand) !== nextOnHand || Number(prev.inTransit) !== nextInTransit)) {
+            factoryChanges.add(i.product);
+          }
+
           map.set(key, {
             ...prev,
-            onHand: Math.max(
-              0, Math.round(Number(i.onHand) || 0)
-            ),
-            inTransit: Math.max(
-              0, Math.round(Number(i.inTransit) || 0)
-            ),
+            onHand: nextOnHand,
+            inTransit: nextInTransit,
             minStock: Math.max(
               0, Math.round(Number(i.minStock) || 0)
             ),
@@ -215,6 +246,17 @@ const server = http.createServer(async (req, res) => {
           'UPDATE stock_state SET rows = $1::jsonb WHERE id = 1',
           [JSON.stringify(rows)]
         );
+
+        if (factoryChanges.size > 0) {
+          await client.query(`
+            INSERT INTO stock_notifications (title, message, changed_products)
+            VALUES ($1, $2, $3)
+          `, [
+            'Fabrika Stokları Güncellendi',
+            `Fabrika stok bilgileri güncellendi. ${factoryChanges.size} ürünün stok miktarı değişti. Güncel verileri Fabrika Dashboard üzerinden görüntüleyebilirsiniz.`,
+            factoryChanges.size
+          ]);
+        }
 
         await client.query('COMMIT');
 

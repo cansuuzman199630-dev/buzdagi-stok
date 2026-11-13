@@ -46,3 +46,52 @@ function critical(){
 }
 function history(){document.querySelector('#history').innerHTML=`<div class="panel tablePanel"><h2>Hareket Geçmişi</h2><p>Son kayıtlar</p><div class="scroll"><table><thead><tr><th>Tarih</th><th>Ürün</th><th>Depo</th><th>Depo Stok</th><th>Yolda</th><th>Toplam</th></tr></thead><tbody>${state.history.map(x=>`<tr><td>${new Date(x.createdAt).toLocaleString('tr-TR')}</td><td class="prod">${x.product}</td><td>${x.warehouse}</td><td>${fmt(x.onHand)}</td><td>${fmt(x.inTransit)}</td><td>${fmt(x.onHand+x.inTransit)}</td></tr>`).join('')}</tbody></table></div></div>`}
 function renderAll(){dashboard();factoryDashboard();stock();critical()}function switchTab(id){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('hide',x.id!==id));document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));if(id==='dash'||id==='factory')load().catch(()=>{})}document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));load().catch(e=>document.querySelector('#msg').textContent='Veri yükleme hatası');
+
+
+// Sunucuda saklanan, tüm oturumlarda görülebilen fabrika stok bildirimleri.
+let knownNotificationId = null;
+let notificationToastTimeout;
+const notificationBell = document.querySelector('#notificationBell');
+const notificationPanel = document.querySelector('#notificationPanel');
+notificationBell.addEventListener('click', () => {
+  const isOpening = notificationPanel.classList.contains('hide');
+  notificationPanel.classList.toggle('hide', !isOpening);
+  notificationBell.setAttribute('aria-expanded', String(isOpening));
+  if (isOpening) refreshNotifications(false);
+});
+document.querySelector('#notificationRead').addEventListener('click', async () => {
+  try {
+    const r = await fetch('/api/notifications/read', {method:'POST'});
+    if (!r.ok) throw new Error();
+    await refreshNotifications(false);
+  } catch (_) { alert('Bildirimler okundu olarak işaretlenemedi.'); }
+});
+async function refreshNotifications(showToast=true) {
+  try {
+    const r = await fetch('/api/notifications', {cache:'no-store'});
+    if (!r.ok) return;
+    const data = await r.json();
+    const notifications = data.notifications || [];
+    const newest = notifications[0];
+    const count = document.querySelector('#notificationCount');
+    count.textContent = data.unread > 99 ? '99+' : String(data.unread || 0);
+    count.classList.toggle('hide', !data.unread);
+    const list = document.querySelector('#notificationList');
+    list.innerHTML = notifications.length ? notifications.map(n => `
+      <div class="notificationItem ${n.readAt ? '' : 'unread'}">
+        <strong>${esc(n.title)}</strong><p>${esc(n.message)}</p>
+        <small>${new Date(n.createdAt).toLocaleString('tr-TR')}</small>
+      </div>`).join('') : '<div class="notificationItem">Henüz fabrika stok bildirimi bulunmuyor.</div>';
+    if (knownNotificationId !== null && newest && newest.id !== knownNotificationId && showToast) {
+      const toast = document.querySelector('#notificationToast');
+      toast.textContent = '🔔 ' + newest.title + ' — ' + newest.changedProducts + ' ürün güncellendi.';
+      toast.classList.remove('hide');
+      clearTimeout(notificationToastTimeout);
+      notificationToastTimeout = setTimeout(() => toast.classList.add('hide'), 6500);
+    }
+    knownNotificationId = newest ? newest.id : knownNotificationId;
+  } catch (e) { console.warn('Bildirimler yüklenemedi:', e); }
+}
+refreshNotifications(false);
+setInterval(() => { if (!document.hidden) refreshNotifications(); }, 15000);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshNotifications(); });
